@@ -1,5 +1,6 @@
 body{
     background-color:#F8F8FF;
+    background-size: cover
 }
 
 *{
@@ -19,6 +20,7 @@ header{
     font-family: arial;
     z-index: 1;    
     padding: 10px;
+    background-position: 90px 90px;
 }
 
 nav{
@@ -26,22 +28,28 @@ nav{
     font-weight: bold;
     font-family: arial;
     font-size: 1.6rem;
-    margin-right: 2px;
-    word-spacing: 20px;
-    padding-top: 10%;
-    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 3px;
+    max-width: 2900px;
+    grid-template-columns: 15px 15px 15px 15px
+    ;
+}
+
+#titulo-nav{   
+    text-align:left;
+    font-family: arial;
+    grid-template-columns: 83% 5% 5% 5%;
 }
 
 a{
     text-decoration: none;
     color: #fff;
     transition: all 400ms ease-in-out;
-    
 }
 
 a:hover{
    color: #DEB887;
-
 }
 
 .compre{
@@ -94,21 +102,21 @@ h4{
 
 .container{
     background-color: #fff;
-    width: 80%;
-    box-shadow: 2px 2px #808080;
-    padding-left: 10px;
+    width: 95%;
+    box-shadow: 0.1px 0.1px 0.2px #808080;
     text-align:justify;
     margin: 0 auto;
     max-width: 90%;
     max-height: 90%;
     min-width: 0;
     min-height: 0;
-    padding: 5px;
+    margin-top: 5px;
 }
 
 #grid-container{
     margin-top: 5px;
     background-color: #2F4F4F;
+    padding: 5px;
 }
 
 .grid{
@@ -117,6 +125,8 @@ h4{
     grid-gap:5px;
     max-width: 1000px;
     margin: 0 auto;
+    background-size:cover;
+    
 }
 
 .grid div{
@@ -124,7 +134,11 @@ h4{
     font-family: arial;
     text-align: center;
     font-size: 1.6rem;
-    padding: 6px;
+    padding: 2px;
+   padding-bottom: 10px;
+   box-shadow: 0.2px 0.2px #000;
+   background-position: 90% 90%;
+    
 }
 #formulario{
     background-color: #00008B;
@@ -133,13 +147,20 @@ h4{
 
 .formulario-contato{
     font-family: arial;
-    font-size: 1.8rem;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 3px;
     text-align: left;
-    margin-left: 5%;
+    margin-left: 3%;
     font-weight: bold;
     color: #fff;
+   
 }
+
+#enviar{
+    background-color:#3CB371;
+    border-radius: 5%;
+    color: #fff;
+} 
 
 #limpar{
 background-color:#B22222;
@@ -148,40 +169,34 @@ color:#fff;
 
 }
 
-#enviar{
-background-color:#3CB371;
-border-radius: 5%;
-color: #fff;
-}
-
 input{
     font-family: sans-serif;
-    font-size: 1.7rem;
-    padding: 5px;
-    
+    font-size: 1.4rem;
+    padding: 2px; 
 }
 
 .dados-formulario{
-    width: 60%;
+    width: 50%;
 }
 
 h2{
     text-align: center;
+    font-size: 1.6rem;
 }
 footer{
     font-family: arial;
     color:#fff;
     background-color:#000000;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 p{
     font-family: arial; 
     text-align: justify;
     padding: 5px;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 h1{
@@ -192,7 +207,26 @@ h1{
 
 .text-footer{
     text-align: center;
-    padding-top: 10px;
-   font-size: 2.0rem;
-   padding-bottom: 1.6px;
+    padding-top: 2px;
+   font-size: 1.0rem;
+   padding-bottom: 1.0px;
+}
+
+.imagem-grid{
+    width: 10rem;
+    height: 5rem;
+    border-radius: 20px;
+}
+
+.texto-grid{
+    font-family: arial;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.link-grid{
+    color:#00008B;
+    font-weight: bold;
+    font-size: 1rem;
 }
