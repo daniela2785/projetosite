@@ -20,8 +20,15 @@ header{
     font-family: arial;    
     width: 100%;
     position: fixed;
-    
 }
+
+@media (min-width: 320px) and (max-width: 450px){
+    header{
+        text-align: center;
+    }
+}
+
+
 
 nav{
     text-align: right;
@@ -31,7 +38,7 @@ nav{
 }
 
 #titulo-nav{   
-    text-align:left;
+    text-align:right;
     font-family: arial;
     grid-template-columns: 83% 5% 5% 5%;
 }
